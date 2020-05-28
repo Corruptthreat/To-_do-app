@@ -48,7 +48,7 @@
                 android:layout_below="@+id/item_brand" />
 
             <Button
-                android:background="@color/colorAccent"
+                android:background="#0f2037"
                 android:textColor="@color/cardview_light_background"
                 android:id="@+id/save_button"
                 android:layout_width="100dp"

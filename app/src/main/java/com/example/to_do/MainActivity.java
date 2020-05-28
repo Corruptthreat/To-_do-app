@@ -38,6 +38,8 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         dbHandler = new DBHandler(this);
+        byPassActivity();
+
         List<Item> items = dbHandler.getAllItems();
         for (Item item : items){
             Log.d("Main" , "onCreate: " + item.getItem_name());
@@ -51,6 +53,13 @@ public class MainActivity extends AppCompatActivity {
                 createPopupDialog();
             }
         });
+    }
+
+    private void byPassActivity() {
+        if(dbHandler.getItemCount()>0){
+            startActivity(new Intent(MainActivity.this , ListActivity.class));
+            finish();
+        }
     }
 
     private void saveItem(View view) {

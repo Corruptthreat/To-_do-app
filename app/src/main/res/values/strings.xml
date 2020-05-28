@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">To_do</string>
+    <string name="app_name">Shopping List</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
@@ -17,4 +17,8 @@
     <string name="enter_item_size">S , M , L or Weight in kgs</string>
     <string name="save">Save</string>
     <string name="item_list">Item Description</string>
+    <string name="sure_value">Are you sure?</string>
+    <string name="yes_conf_button">Yes</string>
+    <string name="no_conf_btn">No</string>
+    <string name="edit_item_des">Edit Item</string>
 </resources>
